@@ -149,7 +149,7 @@ function addLocationToMap() {
     const lngParam3 = urlParams.get('lng3');
     if (latParam3 !== null && lngParam3 !== null) {
         var userLat3 = parseFloat(latParam3);
-        var userLng3 = parseFloat(lng3);
+        var userLng3 = parseFloat(lngParam3);
         L.marker([userLat3, userLng3], {icon: blueIcon}).addTo(SNLayer).bindPopup("Sua localização");
     }
 }
