@@ -170,7 +170,7 @@
     <Folder>
       <name>Linha Norte do VLT de Sobral</name>
       <Placemark>
-        <name>Estação Novo Recanto Norte</name>
+        <name>Estação Novo Recanto (Norte)</name>
         <description>Avenida José de Figueiredo Paula Pessoa</description>
         <styleUrl>#icon-959-4186F0</styleUrl>
         <Point>
@@ -180,7 +180,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Grendene Norte</name>
+        <name>Estação Grendene (Norte)</name>
         <description>Avenida José Figueiredo, em frente à Grendene</description>
         <styleUrl>#icon-959-4186F0</styleUrl>
         <Point>
@@ -190,7 +190,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Alto da Brasil Norte</name>
+        <name>Estação Alto da Brasil (Norte)</name>
         <description>Avenida José Figueiredo, esquina com a rua Efrata</description>
         <styleUrl>#icon-959-4186F0</styleUrl>
         <Point>
@@ -200,7 +200,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Campo dos Velhos - INTEGRAÇÃO Norte Sul</name>
+        <name>Estação Campo dos Velhos (Norte/Sul)</name>
         <description>Rua Idelfonso Holanda Cavalcante, em frente a Praça Campo dos Velhos, quase na esquina com a rua Jornalista Deolindo Barreto</description>
         <styleUrl>#icon-959-7C3592</styleUrl>
         <Point>
@@ -210,7 +210,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Junco Norte</name>
+        <name>Estação Junco (Norte)</name>
         <description>Avenida John Sanford, quase na esquina com a Rua Doutor Manoel Marinho</description>
         <styleUrl>#icon-959-4186F0</styleUrl>
         <Point>
@@ -220,7 +220,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação José Euclides Norte</name>
+        <name>Estação José Euclides (Norte)</name>
         <description>Avenida John Sanford, em frente ao número 1698</description>
         <styleUrl>#icon-959-4186F0</styleUrl>
         <Point>
@@ -230,7 +230,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Cohab III Norte</name>
+        <name>Estação Cohab III (Norte)</name>
         <description>Rua Menino Jesus de Praga, em frente ao nº 2890</description>
         <styleUrl>#icon-959-4186F0</styleUrl>
         <Point>
@@ -359,7 +359,7 @@
     <Folder>
       <name>Linha Sul do VLT de Sobral</name>
       <Placemark>
-        <name>Estação Dom José Sul</name>
+        <name>Estação Dom José (Sul)</name>
         <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -368,7 +368,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Sumaré Sul</name>
+        <name>Estação Sumaré (Sul)</name>
         <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -377,7 +377,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Boulevard do Arco Sul</name>
+        <name>Estação Boulevard do Arco (Sul)</name>
         <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -386,7 +386,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Dom Expedito Sul</name>
+        <name>Estação Dom Expedito (Sul)</name>
         <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -395,7 +395,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Estação Cohab II Sul</name>
+        <name>Estação Cohab II (Sul)</name>
         <styleUrl>#icon-959-DB4436-nodesc</styleUrl>
         <Point>
           <coordinates>

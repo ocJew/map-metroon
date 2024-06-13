@@ -73,7 +73,7 @@ function addKMLTracks() {
                         iconSize: [16, 16],
                         iconAnchor: [8, 8],
                     })
-                });
+                }).bindPopup(geoJsonPoint.properties.name.replace(/^Estação\s+/i, ''));
             }
         }));
 
@@ -95,7 +95,7 @@ function addKMLTracks() {
                         iconSize: [16, 16],
                         iconAnchor: [8, 8],
                     })
-                });
+                }).bindPopup(geoJsonPoint.properties.name.replace(/^Estação\s+/i, ''));
             }
         }));
 
@@ -121,7 +121,7 @@ var redIcon = L.icon({
 var blueIcon = L.icon({
     iconUrl: './icons/usuario.png',
     iconSize: [50, 50],
-    iconAnchor: [23, 41],
+    iconAnchor: [25, 41],
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
 });
@@ -131,26 +131,32 @@ function addLocationToMap() {
     const urlParams = new URLSearchParams(window.location.search);
     const latParam = urlParams.get('lat');
     const lngParam = urlParams.get('lng');
+    var popupContent = "<b>VLT NORTE</b><br>"; 
     if (latParam !== null && lngParam !== null) {
         var userLat = parseFloat(latParam);
         var userLng = parseFloat(lngParam);
-        L.marker([userLat, userLng], {icon: redIcon}).addTo(northLayer).bindPopup("VLT NORTE");
+        L.marker([userLat, userLng], {icon: redIcon}).addTo(northLayer).bindPopup(popupContent);
     }
 
     const latParam2 = urlParams.get('lat2');
     const lngParam2 = urlParams.get('lng2');
+    var popupContent2 = "<b>VLT SUL</b><br>"; 
     if (latParam2 !== null && lngParam2 !== null) {
         var userLat2 = parseFloat(latParam2);
         var userLng2 = parseFloat(lngParam2);
-        L.marker([userLat2, userLng2], {icon: redIcon}).addTo(southLayer).bindPopup("VLT SUL");
+        L.marker([userLat2, userLng2], {icon: redIcon}).addTo(southLayer).bindPopup(popupContent2);
     }
 
-    const latParam3 = urlParams.get('lat3');
-    const lngParam3 = urlParams.get('lng3');
-    if (latParam3 !== null && lngParam3 !== null) {
-        var userLat3 = parseFloat(latParam3);
-        var userLng3 = parseFloat(lngParam3);
-        L.marker([userLat3, userLng3], {icon: blueIcon}).addTo(SNLayer).bindPopup("Sua localização");
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var userLat = position.coords.latitude;
+            var userLng = position.coords.longitude;
+            L.marker([userLat, userLng], { icon: blueIcon }).addTo(SNLayer).bindPopup("Sua localização");
+        }, function(error) {
+            console.error('Erro ao obter localização:', error.message);
+        });
+    } else {
+        console.log('Geolocalização não é suportada pelo seu navegador.');
     }
 }
 addLocationToMap();

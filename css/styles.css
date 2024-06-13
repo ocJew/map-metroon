@@ -70,3 +70,17 @@ body.dark-mode #button-ambos {
     background-color: #66666675;
     border-color: #99999977;
 }
+.custom-popup .leaflet-popup-content-wrapper {
+    background-color: #f9f9f9; /* Cor de fundo */
+    border-radius: 10px;       /* Bordas arredondadas */
+    padding: 10px;             /* Espaçamento interno */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra */
+}
+.custom-popup .leaflet-popup-tip {
+    background-color: #f9f9f9; /* Cor de fundo da seta */
+}
+.custom-popup .leaflet-popup-content {
+    font-size: 14px;           /* Tamanho da fonte */
+    color: #333;               /* Cor do texto */
+    text-align: center;        /* Alinhamento do texto */
+}
